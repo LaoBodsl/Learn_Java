@@ -23,6 +23,18 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 		if("admin".equals(userName)&&"123".equals(passWord))
 		{
+			//1.成功次数累加
+			//获取以前存的值,然后在旧的值基础上+1
+			Object obj = getServletContext().getAttribute("count");
+			int totalCount = 0;
+			if(obj!=null)
+			{
+				totalCount = (int)obj;
+			}
+			System.out.println("登录成功的次数是:"+totalCount);
+			//给这个count赋新的值
+			getServletContext().setAttribute("count", totalCount+1);
+			//2.跳转到成功界面
 //			System.out.println("登录成功");
 //			pw.write("login success..");
 			response.setStatus(302);
