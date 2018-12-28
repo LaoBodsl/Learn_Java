@@ -29,4 +29,14 @@
     <servlet-name>Demo02</servlet-name>
     <url-pattern>/Demo02</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Demo03</display-name>
+    <servlet-name>Demo03</servlet-name>
+    <servlet-class>servlet.Demo03</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Demo03</servlet-name>
+    <url-pattern>/Demo03</url-pattern>
+  </servlet-mapping>
 </web-app>
