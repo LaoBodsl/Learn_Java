@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Demo04" path="/Demo04" reloadable="true" source="org.eclipse.jst.jee.server:Demo04"/><Context docBase="RequsetDemo01" path="/RequsetDemo01" reloadable="true" source="org.eclipse.jst.jee.server:RequsetDemo01"/><Context docBase="ResponseDemo01" path="/ResponseDemo01" reloadable="true" source="org.eclipse.jst.jee.server:ResponseDemo01"/><Context docBase="DownLoadDemo" path="/DownLoadDemo" reloadable="true" source="org.eclipse.jst.jee.server:DownLoadDemo"/><Context docBase="RRdemo" path="/RRdemo" reloadable="true" source="org.eclipse.jst.jee.server:RRdemo"/></Host>
+      <Context docBase="Demo04" path="/Demo04" reloadable="true" source="org.eclipse.jst.jee.server:Demo04"/><Context docBase="RequsetDemo01" path="/RequsetDemo01" reloadable="true" source="org.eclipse.jst.jee.server:RequsetDemo01"/><Context docBase="ResponseDemo01" path="/ResponseDemo01" reloadable="true" source="org.eclipse.jst.jee.server:ResponseDemo01"/><Context docBase="DownLoadDemo" path="/DownLoadDemo" reloadable="true" source="org.eclipse.jst.jee.server:DownLoadDemo"/><Context docBase="RRdemo" path="/RRdemo" reloadable="true" source="org.eclipse.jst.jee.server:RRdemo"/><Context docBase="CookieDemo" path="/CookieDemo" reloadable="true" source="org.eclipse.jst.jee.server:CookieDemo"/></Host>
     </Engine>
   </Service>
 </Server>
