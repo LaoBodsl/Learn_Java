@@ -19,4 +19,14 @@
     <servlet-name>CarServlet</servlet-name>
     <url-pattern>/CarServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>clearCartServlet</display-name>
+    <servlet-name>clearCartServlet</servlet-name>
+    <servlet-class>servlet.clearCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>clearCartServlet</servlet-name>
+    <url-pattern>/clearCartServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

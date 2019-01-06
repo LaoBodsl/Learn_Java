@@ -27,7 +27,8 @@ public class CarServlet extends HttpServlet {
 		else {
 			map.put(name, 1);
 		}
-		response.getWriter().write("<a href = 'Product_list.jsp'><h3>继续购物</h3></a><br>");
+		response.getWriter().write("<a href = 'product_list.jsp'><h3>继续购物</h3></a><br>");
+		response.getWriter().write("<a href = 'cart.jsp'><h3>去购物车结算</h3></a><br>");
 	}
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
