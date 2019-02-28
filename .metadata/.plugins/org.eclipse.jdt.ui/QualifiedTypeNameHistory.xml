@@ -24,4 +24,6 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="javax.swing.table.TableStringConverter"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.itheima.jdbc.util.JDBCUtil"/>
+<fullyQualifiedTypeName name="laobo.dao.impl.UserDaoImpl"/>
 </qualifiedTypeNameHistroy>
