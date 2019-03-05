@@ -17,7 +17,7 @@ public class TestPool {
 		PreparedStatement ps=null;
 		try {	
 			conn = dataSource.getConnection();
-			String sql = "select * from t_stu";
+			String sql = "insert into t_stu values(null,'gq',17,'bj')";
 			ps = conn.prepareStatement(sql);
 			ps.executeUpdate();
 			
