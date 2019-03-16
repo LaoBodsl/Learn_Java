@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.servlet.Servlet"/>
-<fullyQualifiedTypeName name="com.sun.net.httpserver.HttpServer"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.fastinfoset.sax.Properties"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
@@ -14,7 +12,6 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="util.CookieUtil"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -26,7 +23,6 @@
 <fullyQualifiedTypeName name="laobo.dao.impl.UserDaoImpl"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="laobo.util.JDBCUtil"/>
-<fullyQualifiedTypeName name="laobo.dao.UserDao"/>
 <fullyQualifiedTypeName name="laobo.dao.ipml.UserDaoIpml"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.digester.DocumentProperties.Charset"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
@@ -46,9 +42,22 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="laobo.domain.Student"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="offer.findadd"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="offer.dd"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.model.core.ID"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
+<fullyQualifiedTypeName name="laobo.domain.UserBean"/>
+<fullyQualifiedTypeName name="laobo.dao.UserDao"/>
+<fullyQualifiedTypeName name="laobo.Impl.UserDaoImpl"/>
+<fullyQualifiedTypeName name="com.itheima.util.JDBCUtil02"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.concurrent.CountDownLatch"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
