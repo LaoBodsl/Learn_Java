@@ -2,4 +2,6 @@
 <typeInfoHistroy>
 <typeInfo handle="=StuManage/src&lt;laobo.dao{UserDao.java[UserDao" modifiers="513" timestamp="1551279798000"/>
 <typeInfo handle="=StuManage/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_191.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;org.omg.PortableInterceptor(USER_EXCEPTION.class[USER_EXCEPTION" modifiers="1537" timestamp="1538841468000"/>
+<typeInfo handle="=stu/src&lt;laobo.dao{StudentDao.java[StudentDao" modifiers="513" timestamp="1552050071000"/>
+<typeInfo handle="=stu/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_191.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;com.sun.corba.se.spi.presentation.rmi(PresentationManager$StubFactory.class[StubFactory" modifiers="1545" timestamp="1538841468000"/>
 </typeInfoHistroy>
