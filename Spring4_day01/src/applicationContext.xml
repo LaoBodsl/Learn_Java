@@ -3,6 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-        <bean id="userDao" class = "laobo.Spring.UserDaoHIpml">
+<!--         <bean id="userDao" class = "laobo.Spring.UserDaoHIpml">
+        
+        </bean> -->
+        <bean id="car" class ="laobo.SpringDemo.Car">
+        
+        	<property name="name" value = "beac" />
+        	<property name="price" value="100000"/>
+        
         </bean>
+         
 </beans>
