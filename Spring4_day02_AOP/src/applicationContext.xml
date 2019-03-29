@@ -10,8 +10,10 @@
          <bean id="MyAspect" class="laobo.springDemo1.MyAspectXML" />
       <aop:config>
          <aop:pointcut expression="execution(* laobo.springDemo1.ProductDaoImpl.save(..))" id="pointcut1"/>
+         <aop:pointcut expression="execution(* laobo.springDemo1.ProductDaoImpl.delet(..))" id="pointcut2"/>
          <aop:aspect ref="MyAspect">
          		<aop:before method="checkPir" pointcut-ref="pointcut1" />
+         		<aop:after method="clean" pointcut-ref="pointcut2"/>
          </aop:aspect>
       </aop:config>
 </beans>
