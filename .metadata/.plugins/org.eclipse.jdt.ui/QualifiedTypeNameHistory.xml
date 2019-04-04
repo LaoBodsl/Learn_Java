@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="laobo.util.JDBCUtil"/>
 <fullyQualifiedTypeName name="laobo.dao.ipml.UserDaoIpml"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.digester.DocumentProperties.Charset"/>
@@ -54,10 +53,11 @@
 <fullyQualifiedTypeName name="laobo.spring.UserServer"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="laobo.springDemo1.ProductDao"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="laobo.isNumber"/>
 </qualifiedTypeNameHistroy>
