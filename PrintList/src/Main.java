@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class Main {
-    public static ArrayList<Integer> printMatrix(int [][] matrix) {
+    public  ArrayList<Integer> printMatrix(int [][] matrix) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         if(matrix==null)
             return list;
@@ -37,7 +37,8 @@ public class Main {
 //        int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
 //    	int[][] matrix = null;
     	int[][] matrix= {{1}};
-        ArrayList<Integer>list=printMatrix(matrix);
+    	Main it = new Main();
+        ArrayList<Integer>list=it.printMatrix(matrix);
         for (Integer tmp : list) {
             System.out.println(tmp);
         }
