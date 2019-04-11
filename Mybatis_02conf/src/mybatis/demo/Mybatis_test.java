@@ -50,18 +50,4 @@ public class Mybatis_test {
 		}
 		
 	}
-	@Test
-	public void test02() throws IOException {
-		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
-		SqlSession openSession = sqlSessionFactory.openSession();
-		try {
-			EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
-			Employee employee = new Employee(null,"laobo","1","gq@qq.com");
-			mapper.InsertEmpl(employee);
-			openSession.commit();
-		} finally {
-			// TODO: handle finally clause
-			openSession.close();
-		}
-	}
 }

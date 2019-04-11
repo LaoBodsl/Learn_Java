@@ -1,14 +1,14 @@
 package mybatis.demo;
 
 public class Employee {
-	private Integer id;
+	private int id;
 	private String last_name;
 	private String gender;
 	private String email;
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getLast_name() {
@@ -32,17 +32,6 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", last_name=" + last_name + ", gender=" + gender + ", email=" + email + "]";
-	}
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Employee(Integer id, String last_name, String gender, String email) {
-		super();
-		this.id = id;
-		this.last_name = last_name;
-		this.gender = gender;
-		this.email = email;
 	}
 	
 }
