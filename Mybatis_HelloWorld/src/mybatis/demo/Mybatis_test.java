@@ -1,6 +1,7 @@
 package mybatis.demo;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -42,8 +43,12 @@ public class Mybatis_test {
 		SqlSession openSession = sessionFactory.openSession();
 		try {
 			EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
-			Employee employee = mapper.getEmplById(1);
-			System.out.println(employee);
+			List<Employee> emplByLikeName = mapper.getEmplByLikeName("%lao%");
+			for (Employee employee2 : emplByLikeName) {
+				System.out.println(employee2);
+			}
+//			Employee employee = mapper.getEmplById(1);
+//			System.out.println(employee);
 		} finally {
 			// TODO: handle finally clause
 			openSession.close();

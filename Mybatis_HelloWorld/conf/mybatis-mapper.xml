@@ -10,4 +10,7 @@
 	<update id="UpdataEmpl">
 		update tbl_employee set last_name=#{last_name}, gender=#{gender},email=#{email}
 	</update>
+	<select id="getEmplByLikeName" resultType="mybatis.demo.Employee">
+		select * from tbl_employee where last_name like #{list_name}
+	</select>
 </mapper>
