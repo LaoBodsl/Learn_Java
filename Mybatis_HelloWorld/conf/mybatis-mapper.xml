@@ -5,7 +5,7 @@
 	</select>
 	<insert id="InsertEmpl">
 		insert into tbl_employee(last_name,gender,email)
-		values(#{last_name},#{gender},#{email})
+		values(#{LastName},#{gender},#{email})
 	</insert>
 	<update id="UpdataEmpl">
 		update tbl_employee set last_name=#{last_name}, gender=#{gender},email=#{email}

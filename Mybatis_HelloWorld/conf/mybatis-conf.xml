@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	<settings>
+	<setting name="uP" value=""/>
+	</settings>
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
@@ -11,9 +14,11 @@
 				<property name="password" value="12345678" />
 			</dataSource>
 		</environment>
+		
 	</environments>
 	<mappers>
 		<mapper resource="mybatis-mapper.xml" />
 	</mappers>
 	
 </configuration>
+
