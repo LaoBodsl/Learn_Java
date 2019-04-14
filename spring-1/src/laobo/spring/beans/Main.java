@@ -1,6 +1,5 @@
 package laobo.spring.beans;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
