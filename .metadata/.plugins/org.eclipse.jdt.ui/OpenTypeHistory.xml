@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Spring4_day01/src&lt;laobo.Spring{UserDaoH.java[UserDaoH" modifiers="513" timestamp="1553262079000"/>
-<typeInfo handle="=Spring4_day02/src&lt;laobo.spring{UserDao.java[UserDao" modifiers="513" timestamp="1553567065000"/>
-<typeInfo handle="=Spring4_day02/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_191.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;org.omg.PortableInterceptor(USER_EXCEPTION.class[USER_EXCEPTION" modifiers="1537" timestamp="1538841468000"/>
-<typeInfo handle="=Spring4_day02/src&lt;laobo.spring{UserServer.java[UserServer" modifiers="513" timestamp="1553569138000"/>
-<typeInfo handle="=Spring4_day02_AOP/src&lt;laobo.springDemo1{ProductDao.java[ProductDao" modifiers="513" timestamp="1553784309000"/>
+<typeInfo handle="=SpringMVC_1/\/Users\/laobo\/Desktop\/Learn_Java\/SpringMVC_1\/WebContent\/WEB-INF\/lib\/spring-web-4.0.0.RELEASE.jar&lt;org.springframework.web.filter(HiddenHttpMethodFilter.class[HiddenHttpMethodFilter" modifiers="33" timestamp="1555554771000"/>
+<typeInfo handle="=SpringMVC_2/\/Users\/laobo\/Desktop\/Learn_Java\/SpringMVC_2\/WebContent\/WEB-INF\/lib\/spring-web-4.0.0.RELEASE.jar&lt;org.springframework.web.filter(HiddenHttpMethodFilter.class[HiddenHttpMethodFilter" modifiers="33" timestamp="1557667657000"/>
+<typeInfo handle="=SpringMVC_2/\/Users\/laobo\/Desktop\/Learn_Java\/SpringMVC_2\/WebContent\/WEB-INF\/lib\/spring-webmvc-4.0.0.RELEASE.jar&lt;org.springframework.web.servlet(DispatcherServlet.class[DispatcherServlet" modifiers="33" timestamp="1557667657000"/>
 </typeInfoHistroy>
