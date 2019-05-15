@@ -27,6 +27,7 @@
 		%>
 		Gender:<form:radiobuttons path="gender" items="${genders }"/><br>
 		Department:<form:select path="department.id" items="${departments }" itemLabel="departmentName" itemValue="id"></form:select>
+		Salary:<form:input path="salary"/><br>
 		<br>
 		<input type="submit" value="Submit" />	
 	</form:form>

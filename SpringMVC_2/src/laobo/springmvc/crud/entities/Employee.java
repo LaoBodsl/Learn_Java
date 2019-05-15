@@ -91,14 +91,14 @@ public class Employee {
 				+ ", department=" + department + ", birth=" + birth + ", salary=" + salary + "]";
 	}
 
-	public Employee(Integer id, String lastName, String email, Integer gender, Department department
-			) {
+	public Employee(Integer id, String lastName, String email, Integer gender, Department department) {
 		super();
 		this.id = id;
 		this.lastName = lastName;
 		this.email = email;
 		this.gender = gender;
 		this.department = department;
+		
 		
 	}
 
