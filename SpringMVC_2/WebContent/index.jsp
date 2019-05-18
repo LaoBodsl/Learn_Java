@@ -27,5 +27,13 @@
 <body>
 	<a href="emps">List all employee </a><br>
 	<a href="testJson" id="testJson">Test Json</a>
+	
+	<br><br>
+	
+	<form action="testFileUpload" method="POST" enctype="multipart/form-data">
+		File:<input type="file" name="file" />
+		Desc:<input type="text" name="desc" />
+		<input type="submit" name="Submit" />
+	</form>
 </body>
 </html>
