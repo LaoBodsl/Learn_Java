@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=SSM_CURD/\/Users\/laobo\/repository\/jstl\/jstl\/1.2\/jstl-1.2.jar&lt;org.apache.taglibs.standard.tag.el.fmt(RequestEncodingTag.class[RequestEncodingTag" modifiers="33" timestamp="1558404797000"/>
-<typeInfo handle="=SSM_CURD/\/Users\/laobo\/repository\/org\/springframework\/spring-web\/4.3.7.RELEASE\/spring-web-4.3.7.RELEASE.jar&lt;org.springframework.web.filter(HiddenHttpMethodFilter.class[HiddenHttpMethodFilter" modifiers="33" timestamp="1558404429000"/>
-<typeInfo handle="=SSM_CURD/\/Users\/laobo\/repository\/org\/springframework\/spring-webmvc\/4.3.7.RELEASE\/spring-webmvc-4.3.7.RELEASE.jar&lt;org.springframework.web.servlet.view(InternalResourceViewResolver.class[InternalResourceViewResolver" modifiers="33" timestamp="1558404212000"/>
-<typeInfo handle="=SSM_CURD/\/Users\/laobo\/repository\/org\/springframework\/spring-web\/4.3.7.RELEASE\/spring-web-4.3.7.RELEASE.jar&lt;org.springframework.web.filter(CharacterEncodingFilter.class[CharacterEncodingFilter" modifiers="33" timestamp="1558404429000"/>
-<typeInfo handle="=SSM_CURD/\/Users\/laobo\/repository\/org\/springframework\/spring-context\/4.3.7.RELEASE\/spring-context-4.3.7.RELEASE.jar&lt;org.springframework.stereotype(Controller.class[Controller" modifiers="9729" timestamp="1558404338000"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>

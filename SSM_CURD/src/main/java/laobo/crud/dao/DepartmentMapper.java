@@ -6,25 +6,25 @@ import laobo.crud.bean.DepartmentExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface DepartmentMapper {
-    long countByExample(DepartmentExample example);
+	long countByExample(DepartmentExample example);
 
-    int deleteByExample(DepartmentExample example);
+	int deleteByExample(DepartmentExample example);
 
-    int deleteByPrimaryKey(Integer deptId);
+	int deleteByPrimaryKey(Integer deptId);
 
-    int insert(Department record);
+	int insert(Department record);
 
-    int insertSelective(Department record);
+	int insertSelective(Department record);
 
-    List<Department> selectByExample(DepartmentExample example);
+	List<Department> selectByExample(DepartmentExample example);
 
-    Department selectByPrimaryKey(Integer deptId);
+	Department selectByPrimaryKey(Integer deptId);
 
-    int updateByExampleSelective(@Param("record") Department record, @Param("example") DepartmentExample example);
+	int updateByExampleSelective(@Param("record") Department record, @Param("example") DepartmentExample example);
 
-    int updateByExample(@Param("record") Department record, @Param("example") DepartmentExample example);
+	int updateByExample(@Param("record") Department record, @Param("example") DepartmentExample example);
 
-    int updateByPrimaryKeySelective(Department record);
+	int updateByPrimaryKeySelective(Department record);
 
-    int updateByPrimaryKey(Department record);
+	int updateByPrimaryKey(Department record);
 }
