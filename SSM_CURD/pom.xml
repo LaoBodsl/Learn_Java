@@ -6,7 +6,6 @@
 	<artifactId>SSM_CURD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-
 	<!--引入依赖Jar包 -->
 	<!--SpringMVC,Spring -->
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->

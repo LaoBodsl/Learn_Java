@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -20,7 +21,8 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeSercice;
 	
-	@RequestMapping("/emps")
+	@RequestMapping(value="/emps")
+	@ResponseBody
 	public String getEmps(@RequestParam(value="pn", defaultValue="1") Integer pn, Model model) {
 		//在查询之前只需压迫调用,传入页码,以及每页的大小
 		PageHelper.startPage(pn,5);
@@ -29,7 +31,12 @@ public class EmployeeController {
 		//使用pageinfo包装查询后的结果,只需要将pageinnfo交给页面就行了
 		PageInfo page = new PageInfo(emps, 5);
 		model.addAttribute("pageInfo", page);
-		
 		return "list";
+	}
+	
+	@ResponseBody
+	@RequestMapping("/emp")
+	public String test() {
+		return "test";
 	}
 }
