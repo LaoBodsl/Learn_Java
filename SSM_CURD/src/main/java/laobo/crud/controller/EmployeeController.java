@@ -1,5 +1,7 @@
 package laobo.crud.controller;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,6 @@ public class EmployeeController {
 	EmployeeService employeeSercice;
 	
 	@RequestMapping(value="/emps")
-	@ResponseBody
 	public String getEmps(@RequestParam(value="pn", defaultValue="1") Integer pn, Model model) {
 		//在查询之前只需压迫调用,传入页码,以及每页的大小
 		PageHelper.startPage(pn,5);
@@ -34,9 +35,4 @@ public class EmployeeController {
 		return "list";
 	}
 	
-	@ResponseBody
-	@RequestMapping("/emp")
-	public String test() {
-		return "test";
-	}
 }
