@@ -305,9 +305,71 @@
 				}
 			});
 		}
+		//检验表单数据
+		function vaildata_add_form(){
+			//1.拿到要校验的数据,使用正则表达式
+			var empName=$("#empName_add_input").val();
+			var regName=/(^[a-zA-Z0-9_-]{6,16}$)|(^[\u2E80-\u9FFF]{2,5})/;
+			if(!regName.test(empName)){
+				show_vaildata_msg("#empName_add_input", "error", "用户名可以是2-5位中文或者6-16位英文和数字的组合");
+				return false;
+			}else{
+				show_vaildata_msg("#empName_add_input", "success", "");
+			};
+			//2.校验邮箱信息
+			var email =$("#email_add_input").val();
+			var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+			if(!regEmail.test(email)){
+				show_vaildata_msg("#email_add_input", "error", "邮箱格式不正确");
+				return false;
+			}else{
+				show_vaildata_msg("#email_add_input","success","");
+			}
+			return true;
+		}
+		//显示校验结果的提示信息
+		function show_vaildata_msg(ele,status,msg){
+			$(ele).parent().removeClass("has-success has-error");
+			$(ele).next("span").text("");
+			if("success"==status){
+				$(ele).parent().addClass("has-success");
+				$(ele).next("span").text(msg);
+			}else if("error"==status){
+				$(ele).parent().addClass("has-error");
+				$(ele).next("span").text(msg);
+			}
+		}
+		//校验用户名是否可用
+		$("#empName_add_input").change(function(){
+			//发送ajax请求校验用户名是否可用
+			var empName = this.value;
+			$.ajax({
+				url:"${APP_PATH}/checkuser",
+				data:"empName="+empName,
+				type:"POST",
+				success:function(result){
+					if(result.code==100){
+						show_vaildata_msg("#empName_add_input","success", "用户名可用");
+						$("#emp_save_btn").attr("ajax-va","success");
+					}else{
+						show_vaildata_msg("#empName_add_input","error",result.extend.va_msg);
+						$("#emp_save_btn").attr("ajax-va","error");
+					}
+				}
+			})
+		})
 		///点击保存,保存员工
 		$("#emp_save_btn").click(function(){
-			//1.填写的表单数据交给服务器进行保存
+			//1.要对提交给服务器的数据进行校验
+			if(!vaildata_add_form()){
+				return false;
+			};
+			//1.判断之前的ajax用户名校验是否成功
+			if($(this).attr("ajax-va")=="error"){
+				return false;
+			}
+			
+			//发送ajax请求保存员工
 			//alert($("#empAddModal form").serialize());
 			 	$.ajax({
 				url:"${APP_PATH}/emp",
@@ -323,6 +385,17 @@
 						//2、来到最后一页，显示刚才保存的数据
 						//发送ajax请求显示最后一页数据即可
 						to_page(totalRecord);
+					}else{
+						//显示失败信息
+						//那个字段有错误信息就显示哪个字段
+						if(undefined!=result.extend.errorFields.email){
+							//显示邮箱错误信息
+							show_vaildata_msg("#email_add_input","error",result.extend.errorFields.email);
+						}
+						if(undefined!=result.extend.errorFields.empName){
+							//显示员工名字的错误信息
+							show_vaildata_msg("#empName_add_input","error", result.extend.errorFields.empName);
+						}
 					}
 				}
 				});

@@ -31,6 +31,26 @@ public class EmployeeController {
 		employeeSercice.saveEmp(employee);
 		return Msg.success();
 	}
+	/**
+	 * 检查用户名是否可用
+	 * @param empName
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping("/checkuser")
+	public Msg checkuser(@RequestParam("empName") String empName) {
+		//先判断用户名是否是合法的表达式
+		String regx = "(^[a-zA-Z0-9_-]{6,16}$)|(^[\\u2E80-\\u9FFF]{2,5})";
+		if(!empName.matches(regx)) {
+			return Msg.fail().add("va_msg", "用户名必须是6-16位数字和字母的组合或者2-5位中文");
+		}
+		boolean b =employeeSercice.checkUser(empName);
+		if(b) {
+			return Msg.success();
+		}else {
+			return Msg.fail().add("va_msg", "用户名不可用");
+		}
+	}
 	
 	@RequestMapping("/emps")
 	@ResponseBody
